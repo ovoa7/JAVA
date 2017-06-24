@@ -5,27 +5,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.naye.myapplication.MainActivity">
+    tools:context="com.example.naye.myapplication.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <Button
         android:id="@+id/button"
         android:layout_width="88dp"
         android:layout_height="53dp"
         android:text="Setting"
-        tools:layout_editor_absoluteX="313dp"
-        tools:layout_editor_absoluteY="433dp" />
+        tools:layout_editor_absoluteX="270dp"
+        tools:layout_editor_absoluteY="31dp" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="200dp"
         android:layout_height="68dp"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="6dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-    <ListView
-        android:layout_width="298dp"
-        android:layout_height="327dp"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="92dp" />
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="135dp"
+        android:layout_height="73dp"
+        android:text="Day"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:textSize="50sp" />
 
 </android.support.constraint.ConstraintLayout>

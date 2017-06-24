@@ -58,12 +58,15 @@ public class MainActivity extends AppCompatActivity {
 
         public void print(View v,int position){
             Spinner sp=(Spinner)findViewById(R.id.spinner);
+            TextView tx=(TextView)findViewById(R.id.TextView);
             String res="";
             if(sp.getSelectedItemPosition()>0){
                 res=(String)sp.getAdapter().getItem(sp.getSelectedItemPosition());
 
             }
             if(res!=""){
+                tx.setText(res);
+
 
             }
         }

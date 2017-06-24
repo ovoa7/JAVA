@@ -1,10 +1,14 @@
 package com.example.naye.myapplication;
 
+import android.app.DialogFragment;
+import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.TimePicker;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -21,5 +25,17 @@ public class Main2Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        TimePicker tp=(TimePicker) findViewById(R.id.timePicker);
+        final TextView tv= (TextView)findViewById(R.id.textView2)
+        tp.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener(){//데이터베이스이용
+            public void OnTimeChanged(TimePicker view,int hourOfDay,int minute){
+                tv.setText(String.format("%d:%d,hourOfDay,minute"));
+
+            }
+        });
     }
+
+
+
 }
