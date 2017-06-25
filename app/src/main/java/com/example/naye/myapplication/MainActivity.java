@@ -9,11 +9,20 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
 
 public class MainActivity extends AppCompatActivity {
+    ListView list;
+    ListAdapter adapter;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

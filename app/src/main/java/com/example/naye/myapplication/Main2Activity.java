@@ -11,6 +11,8 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 
 public class Main2Activity extends AppCompatActivity {
+    protected DBHelper dbHelper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,19 +23,15 @@ public class Main2Activity extends AppCompatActivity {
         ok.setOnClickListener(new View.OnClickListener() { //o
             @Override
             public void onClick(View v) {
+
                 Intent intent=new Intent(Main2Activity.this,MainActivity.class);
                 startActivity(intent);
             }
         });
 
         TimePicker tp=(TimePicker) findViewById(R.id.timePicker);
-        final TextView tv= (TextView)findViewById(R.id.textView2)
-        tp.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener(){//데이터베이스이용
-            public void OnTimeChanged(TimePicker view,int hourOfDay,int minute){
-                tv.setText(String.format("%d:%d,hourOfDay,minute"));
 
-            }
-        });
+
     }
 
 

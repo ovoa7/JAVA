@@ -33,4 +33,10 @@
         tools:layout_editor_absoluteY="16dp"
         android:textSize="50sp" />
 
+    <ListView
+        android:layout_width="397dp"
+        android:layout_height="373dp"
+        tools:layout_editor_absoluteY="130dp"
+        tools:layout_editor_absoluteX="-5dp" />
+
 </android.support.constraint.ConstraintLayout>
